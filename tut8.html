@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="tut8.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify" >Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="body">
+        <h2 class="h2">This is html forms tutorials</h2><br>
+        <form action="backend.php">
+
+
+            <div class="name">
+                <label for="name"> Name:</label>
+                <input type="text" name="myName" id="name">
+            </div>
+            <br>
+            <div class="role">
+                <label for="Role"> Role: &nbsp;</label>
+                <input type="text" name="myRole" id="Role">
+            </div>
+            <br>
+            <div class="email">
+                <label for="Email"> Email:</label>
+                <input type="email" name="myEmail" id="Email">
+            </div>
+            <br>
+            <div class="date">
+                <label for="date"> Date:</label>
+                <input type="date" name="myDate" id="date">
+            </div>
+            <div class="bonus">
+                <br>
+                <label for="Bonus">Bonus:</label>
+                <input type="number" name="myNumber" id="Bonus">
+            </div>
+            <br>
+            <div class="eligibility">
+                <label for="eligibility">Are you Eligible:</label>
+                <input type="checkbox" name="myEligibility" id="eligibility">
+            </div>
+            <br>
+            <div class="gender">
+                Gender:
+                <label for="male">Male:</label>
+                <input type="radio" name="myGender" id="male">
+                <div class="female"> <label for="Female">Female:</label><input type="radio" name="myGender" id="Female">
+                </div>
+                <div class="female">
+                    <label for="others">Others:</label><input type="radio" name="myGender" id="others">
+                </div>
+
+            </div>
+            <br>
+            <div class="box">
+                <label for="text">Write About Yourself:</label><br><textarea name="myText" id="text" cols="30" rows="5"
+                    width="150%"> </textarea>
+            </div>
+            <br>
+            <div class="car">
+                <label for="car">Car:</label>
+                <select name="myCar" id="car">
+                    <option value="ind">Indica</option>
+                    <option value="swf">Swift</option>
+                    <option value="ren">Renault</option>
+                    <option value="mh" selected>Mahindra Thar</option>
+                    <option value="ns"> Nissan</option>
+                    <option value="lmb">Lamborghini </option>
+                    <option value="me"> Mercedes</option>
+                </select>
+            </div>
+            <br>
+            <div class="sr">
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset everything">
+            </div>
+    </div>
+
+    </form>
+
+</body>
+
+</html>
