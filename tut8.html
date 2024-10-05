@@ -10,15 +10,15 @@
 
 <body>
     <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify" >Spotify</li>
+        <ul class="brand">
+            <li >Spotify</li>
             <li>Home</li>
             <li>About</li>
         </ul>
     </nav>
     <div class="body">
-        <h2 class="h2">This is html forms tutorials</h2><br>
-        <form action="backend.php">
+        <h2 class="h2">Fill you details here </h2><br>
+        <form action="backend.php" method="post">
 
 
             <div class="name">
@@ -53,8 +53,10 @@
             <br>
             <div class="gender">
                 Gender:
-                <label for="male">Male:</label>
-                <input type="radio" name="myGender" id="male">
+                <div class="male">
+                    <label for="male">Male:</label>
+                    <input type="radio" name="myGender" id="male">
+                </div>
                 <div class="female"> <label for="Female">Female:</label><input type="radio" name="myGender" id="Female">
                 </div>
                 <div class="female">
@@ -63,9 +65,9 @@
 
             </div>
             <br>
-            <div class="box">
+            <div class="box"   onclick="clearText()">
                 <label for="text">Write About Yourself:</label><br><textarea name="myText" id="text" cols="30" rows="5"
-                    width="150%"> </textarea>
+                    width="150%" class="text"> Minimum 50 words</textarea>
             </div>
             <br>
             <div class="car">
@@ -88,7 +90,12 @@
     </div>
 
     </form>
-
+    <script>
+        function clearText() {
+            document.getElementById("text").value = "";
+        }
+    </script>
+    
 </body>
 
 </html>
